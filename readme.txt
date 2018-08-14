@@ -1,7 +1,7 @@
 ¸,ø¤°`°¤ø,¸¸,ø¤°`°¤ø,¸,ø¤°`°¤ø,¸¸,ø¤°`°¤ø,¸,ø¤°`°¤ø,¸¸,ø¤°`°¤ø,¸,ø¤°`°¤ø,¸¸,ø¤
  
                   - Visual Boy Advance GX -
-               https://github.com/dborth/vbagx
+            https://github.com/aplumafreak500/vbagx
                      (Under GPL License)
  
 ¸,ø¤°`°¤ø,¸¸,ø¤°`°¤ø,¸,ø¤°`°¤ø,¸¸,ø¤°`°¤ø,¸,ø¤°`°¤ø,¸¸,ø¤°`°¤ø,¸,ø¤°`°¤ø,¸¸,ø¤
@@ -11,7 +11,7 @@ With it you can play GBA/Game Boy Color/Game Boy games on your Wii/GameCube.
 
 -=[ Releases ]=-
 
-https://github.com/dborth/vbagx/releases
+https://github.com/aplumafreak500/vbagx/releases
 
 -=[ Features ]=-
 

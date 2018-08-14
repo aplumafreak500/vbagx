@@ -28,7 +28,10 @@ INCLUDES 	:=  source source/vba
 # options for code generation
 #---------------------------------------------------------------------------------
 
-CFLAGS		=	-g -O3 -Wall $(MACHDEP) $(INCLUDE) \
+
+# -DNO_SOUND
+
+CFLAGS		=	-g -O3 -Wall $(MACHDEP) $(INCLUDE) -D_GNU_SOURCE \
 				-DWORDS_BIGENDIAN -DNO_LINK -DNO_FEX \
 				-DTILED_RENDERING \
 				-DC_CORE -D__ppc__ -D__POWERPC__ -DFINAL_VERSION \
@@ -148,23 +151,23 @@ $(OUTPUT).elf: $(OFILES)
 #---------------------------------------------------------------------------------
 %.ttf.o : %.ttf
 	@echo $(notdir $<)
-	$(bin2o)
+	@$(bin2o)
 	
 %.lang.o : %.lang
 	@echo $(notdir $<)
-	$(bin2o)
+	@$(bin2o)
 
 %.png.o : %.png
 	@echo $(notdir $<)
-	$(bin2o)
+	@$(bin2o)
 	
 %.ogg.o : %.ogg
 	@echo $(notdir $<)
-	$(bin2o)
+	@$(bin2o)
 	
 %.pcm.o : %.pcm
 	@echo $(notdir $<)
-	$(bin2o)
+	@$(bin2o)
 
 -include $(DEPENDS)
 
