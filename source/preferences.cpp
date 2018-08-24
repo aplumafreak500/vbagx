@@ -222,6 +222,7 @@ preparePrefsData ()
 	createXMLController(btnmap[CTRLR_WIIMOTE], "wmpadmap", "Wiimote");
 	createXMLController(btnmap[CTRLR_CLASSIC], "ccpadmap", "Classic Controller");
 	createXMLController(btnmap[CTRLR_NUNCHUK], "ncpadmap", "Nunchuk");
+	createXMLController(btnmap[CTRLR_WUPC], "wupcpadmap", "Wii U Pro Controller");
 
 	createXMLSection("Emulation", "Emulation Settings");
 
@@ -530,6 +531,7 @@ decodePrefsData ()
 			loadXMLController(btnmap[CTRLR_WIIMOTE], "wmpadmap");
 			loadXMLController(btnmap[CTRLR_CLASSIC], "ccpadmap");
 			loadXMLController(btnmap[CTRLR_NUNCHUK], "ncpadmap");
+			loadXMLController(btnmap[CTRLR_WUPC], "wupcpadmap");
 			
 			// Emulation Settings
 			
@@ -607,7 +609,7 @@ void FixInvalidSettings()
 	if(!(GCSettings.yshift > -50 && GCSettings.yshift < 50))
 		GCSettings.yshift = 0;
 	if(!(GCSettings.MusicVolume >= 0 && GCSettings.MusicVolume <= 100))
-		GCSettings.MusicVolume = 40;
+		GCSettings.MusicVolume = 20;
 	if(!(GCSettings.SFXVolume >= 0 && GCSettings.SFXVolume <= 100))
 		GCSettings.SFXVolume = 40;
 	if(GCSettings.language < 0 || GCSettings.language >= LANG_LENGTH)
@@ -663,7 +665,7 @@ DefaultSettings ()
 
 	GCSettings.WiimoteOrientation = 0;
 	GCSettings.ExitAction = 0;
-	GCSettings.MusicVolume = 40;
+	GCSettings.MusicVolume = 20;
 	GCSettings.SFXVolume = 40;
 	GCSettings.Rumble = 1;
 	GCSettings.PreviewImage = 0;
